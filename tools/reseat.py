@@ -15,21 +15,9 @@ from random import shuffle
 from time import time
 from itertools import combinations
 
-y10 = ['Jamie H', 'Angus', 'Alex Y', 'Jack',
-       'Kyle', 'Hayden', 'Alex M',
-       'India', 'Jamie W', 'Claire',
-       'Matthew', 'Joe', 'Will',
-       'Amber', 'Georgina', 'Demi', 'Grace',
-       'Donald', 'Ellie', 'Harry', 'Tom',
-       'Tommy', 'Charles', 'Elliot', 'Zoe',
-       'Izzy', 'Jasmine', 'Ben', 'Rhys']
+y10 = ['Tim', 'Bob', 'Sally', 'Jane', 'Ermintrude']
 
-ban10 = [{'Jamie H', 'Joe', 'Matthew', 'Will', 'Angus', 'Harry' ,'Donald'},
-       {'Jasmine', 'Izzy', 'Ben'},
-       {'Kyle', 'Hayden', 'Alex M'},
-       {'India', 'Jamie W', 'Claire'},
-       {'Ellie', 'Harry', 'Izzy'},
-       {'Eliot', 'Charles', 'Rhys'}]
+ban10 = [{'Tim', 'Ermintrude'}]
 
 
 def filter_for_bans(candidates, bans):
