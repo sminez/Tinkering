@@ -5,9 +5,10 @@ import string
 import time
 import re
 
+
 def startTyping(text):
     monkeyTyped = ''
-    while monkeyTyped == '' or not re.search(monkeyTyped, text) == None:
+    while monkeyTyped == '' or not re.search(monkeyTyped, text) is None:
         monkeyTyped = monkeyTyped + (random.choice(string.ascii_lowercase + string.digits))
     # The last thing that the monkey typed ruined it so remove it and return
     return (monkeyTyped[:-1])
@@ -46,7 +47,7 @@ while len(monkeyProgress) != len(shakespeare):
         if totalKeyPresses % 10000 == 0:
             now = time.time() - start
             print("\nSummary of progress so far::")
-            print("\n...The monkey has been typing for {0:.2f} minutes".format(now/60))
+            print("\n...The monkey has been typing for {0:.2f} minutes".format(now / 60))
             for length, freq in hits.items():
                 print("\tMatch length of {} --> {} times.".format(length, freq))
             print("\n")
